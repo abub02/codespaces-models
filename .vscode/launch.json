@@ -1,6 +1,13 @@
 {
     "configurations": [
         {
+            "name": "Ladicí program Pythonu: Aktuální soubor",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
             "name": "Run JavaScript Sample",
             "program": "${file}",
             "cwd": "${fileDirname}",
@@ -20,6 +27,18 @@
             "redirectOutput": false,
             "request": "launch",
             "type": "debugpy"
+        },
+        {
+            "name": "Python Debugger: Python File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}"
+        },
+        {
+            "type": "node-terminal",
+            "name": "Terminál pro ladění JavaScriptu",
+            "request": "launch",
+            "cwd": "${workspaceFolder}"
         }
     ]
 }
